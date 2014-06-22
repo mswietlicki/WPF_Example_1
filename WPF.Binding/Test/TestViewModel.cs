@@ -8,5 +8,10 @@ namespace WPF.Binding.Test
 {
     public class TestViewModel
     {
+        public TestViewModel()
+        {
+            FirstName = "Marek";
+        }
+        public string FirstName { get; set; }
     }
 }

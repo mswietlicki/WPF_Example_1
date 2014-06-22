@@ -21,6 +21,7 @@ namespace WPF.Binding.Test
     {
         public TestWindow()
         {
+            DataContext = new TestViewModel();
             InitializeComponent();
         }
     }
