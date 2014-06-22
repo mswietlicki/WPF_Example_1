@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using PropertyChanged;
@@ -8,7 +10,7 @@ using PropertyChanged;
 namespace WPF.Binding.Test
 {
     [ImplementPropertyChanged]
-    public class TestViewModel
+    public class TestViewModel : INotifyPropertyChanged
     {
         public TestViewModel()
         {
@@ -23,5 +25,7 @@ namespace WPF.Binding.Test
         {
             get { return string.Format("{0} {1}", FirstName, LastName); }
         }
+
+        public event PropertyChangedEventHandler PropertyChanged;
     }
 }
