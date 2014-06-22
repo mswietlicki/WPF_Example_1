@@ -12,6 +12,9 @@
             <TextBox Text="{Binding FirstName}" />
             <Label Content="Nazwisko"/>
             <TextBox Text="{Binding LastName}" />
+            <Separator/>
+            <Label Content="Imię i nazwisko"/>
+            <TextBox Text="{Binding FullName, Mode=OneWay}" IsReadOnly="True"/>
         </StackPanel>
     </Grid>
 </Window>
