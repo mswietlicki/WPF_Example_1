@@ -8,6 +8,9 @@
         Title="TestWindow" Height="300" Width="300" d:DataContext="{d:DesignInstance test:TestViewModel}">
     <Grid>
         <StackPanel>
+            <Label Content="Imię"/>
+            <TextBlock Text="{Binding FirstName}" />
+            <Label Content="Nazwisko"/>
             <TextBlock Text="{Binding FirstName}" />
         </StackPanel>
     </Grid>

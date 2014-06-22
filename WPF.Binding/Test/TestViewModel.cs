@@ -13,5 +13,7 @@ namespace WPF.Binding.Test
             FirstName = "Marek";
         }
         public string FirstName { get; set; }
+
+        public string LastName { get; set; }
     }
 }
