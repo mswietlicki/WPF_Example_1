@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
         xmlns:test="clr-namespace:WPF.Binding.Test"
-        Title="TestWindow" Height="300" Width="300" d:DataContext="{d:DesignInstance test:TestViewModel}">
+        Title="TestWindow" Height="300" Width="600" d:DataContext="{d:DesignInstance test:TestViewModel}">
     <Grid>
         <StackPanel>
             <Label Content="Imię"/>
-            <TextBlock Text="{Binding FirstName}" />
+            <TextBox Text="{Binding FirstName}" />
             <Label Content="Nazwisko"/>
-            <TextBlock Text="{Binding FirstName}" />
+            <TextBox Text="{Binding LastName}" />
         </StackPanel>
     </Grid>
 </Window>

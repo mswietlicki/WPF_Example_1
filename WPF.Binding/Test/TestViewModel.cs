@@ -11,6 +11,7 @@ namespace WPF.Binding.Test
         public TestViewModel()
         {
             FirstName = "Marek";
+            LastName = "Testowy";
         }
         public string FirstName { get; set; }
 
